@@ -1,25 +1,23 @@
 ﻿using EF_core_practice.Models;
+using EF_core_practice.Models.ModelsConfig;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace EF_core_practice.Context
 {
     public class ApplicationContext : DbContext
     {
         readonly StreamWriter logStream = new StreamWriter(String.Format(@"Logs\logs.txt", true));
-        public DbSet<Company> Companies { get; set; } = null!;
+        public DbSet<AccountRole> AccountRoles { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<CorpAccount> CorpAccounts { get; set; }
+        public DbSet<Country> Countries { get; set; }
+        public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Gender> Genders { get; set; }
         public DbSet<Person> People { get; set; }
         public DbSet<Position> Positions { get; set; }
-        public DbSet<Role> Roles { get; set; }
-        public DbSet<Sex> Sexs { get; set; }
-        public DbSet<UserAccount> UserAccounts { get; set; }
-        public DbSet<UserAccountRole> UserAccountRoles { get; set; }
+        public DbSet<WorkPlace> WorkPlaces { get; set; }
 
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             : base(options)
@@ -32,7 +30,41 @@ namespace EF_core_practice.Context
             optionsBuilder.UseNpgsql();
             optionsBuilder.LogTo(logStream.WriteLine);
         }
+        // Fluent API config
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Table "AccountRole"
+            modelBuilder.ApplyConfiguration(new AccountRoleConfig());
+            
+            // Table "City"
+            modelBuilder.ApplyConfiguration(new CityConfig());
 
+            // Table "CorpAccount"
+            modelBuilder.ApplyConfiguration(new CorpAccountConfig());
+
+            // Table "Country"
+            modelBuilder.ApplyConfiguration(new CountryConfig());
+
+            // Table "Department"
+            modelBuilder.ApplyConfiguration(new DepartmentConfig());
+
+            // Table "Employee"
+            modelBuilder.ApplyConfiguration(new EmployeeConfig());
+
+            // Table "Gender"
+            modelBuilder.ApplyConfiguration(new GenderConfig());
+
+            // Table "Person"
+            modelBuilder.ApplyConfiguration(new PersonConfig());
+
+            // Table "Position"
+            modelBuilder.ApplyConfiguration(new PositionConfig());
+
+            // Table "WorkPlace"
+            modelBuilder.ApplyConfiguration(new WorkPlaceConfig());
+        }
+       
+        // Dispose StreamWriter object
         public override void Dispose()
         {
             base.Dispose();

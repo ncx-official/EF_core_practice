@@ -1,22 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EF_core_practice.Models
 {
-    // [Table("Person")]
     public class Person
     {
-        // [Column("id_person", TypeName="ntext")]
-        public int Id { get; set; }
-        public string FirstName { get; set; }
+        public long Id { get; set; }
+        public string FirstName { get; set; } = null!;
         public string? LastName { get; set; }
         public DateTime BirthDate { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string? Email { get; set; }
+        
+        // Foreign keys 
+        public long GenderId { get; set; }
+        public Gender Gender { get; set; } = null!;
+        public long CityId { get; set; }
+        public City? City { get; set; }
 
-        // Foreign keys
-        public int SexId { get; set; }
+        //
+        public Employee Employee { get; set; } = null!;
     }
 }
