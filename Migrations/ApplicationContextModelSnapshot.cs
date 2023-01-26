@@ -185,9 +185,9 @@ namespace EFcorepractice.Migrations
 
                     b.ToTable("Employee", null, t =>
                         {
-                            t.HasCheckConstraint("CK_Employee_salary", "[salary] > 0");
+                            t.HasCheckConstraint("CK_Employee_salary", "\"salary\" > 0");
 
-                            t.HasCheckConstraint("CK_Employee_workTime_perWeek", "[workTime_perWeek] > 0");
+                            t.HasCheckConstraint("CK_Employee_workTime_perWeek", "\"workTime_perWeek\" > 0");
                         });
                 });
 

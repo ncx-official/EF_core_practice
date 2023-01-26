@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EFcorepractice.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20230126135506_InitialMigration")]
+    [Migration("20230126155223_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -188,9 +188,9 @@ namespace EFcorepractice.Migrations
 
                     b.ToTable("Employee", null, t =>
                         {
-                            t.HasCheckConstraint("CK_Employee_salary", "[salary] > 0");
+                            t.HasCheckConstraint("CK_Employee_salary", "\"salary\" > 0");
 
-                            t.HasCheckConstraint("CK_Employee_workTime_perWeek", "[workTime_perWeek] > 0");
+                            t.HasCheckConstraint("CK_Employee_workTime_perWeek", "\"workTime_perWeek\" > 0");
                         });
                 });
 

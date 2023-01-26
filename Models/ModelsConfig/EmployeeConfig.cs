@@ -24,12 +24,12 @@ namespace EF_core_practice.Models.ModelsConfig
             builder.Property(p => p.Salary)
                    .HasColumnName("salary")
                    .IsRequired();
-            builder.ToTable(p => p.HasCheckConstraint("CK_Employee_salary", "[salary] > 0"));
+            builder.ToTable(p => p.HasCheckConstraint("CK_Employee_salary", "\"salary\" > 0"));
             
             builder.Property(p => p.WorkTimePerWeek)
                    .HasColumnName("workTime_perWeek")
                    .IsRequired();
-            builder.ToTable(p => p.HasCheckConstraint("CK_Employee_workTime_perWeek", "[workTime_perWeek] > 0"));
+            builder.ToTable(p => p.HasCheckConstraint("CK_Employee_workTime_perWeek", "\"workTime_perWeek\" > 0"));
 
             // Foreign keys
             builder.HasOne(e => e.Person)

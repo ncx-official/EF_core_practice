@@ -188,8 +188,8 @@ namespace EFcorepractice.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("Employee_id", x => x.Id);
-                    table.CheckConstraint("CK_Employee_salary", "[salary] > 0");
-                    table.CheckConstraint("CK_Employee_workTime_perWeek", "[workTime_perWeek] > 0");
+                    table.CheckConstraint("CK_Employee_salary", "\"salary\" > 0");
+                    table.CheckConstraint("CK_Employee_workTime_perWeek", "\"workTime_perWeek\" > 0");
                     table.ForeignKey(
                         name: "FK_Employee_CorpAccount_CorpAccountId",
                         column: x => x.CorpAccountId,
