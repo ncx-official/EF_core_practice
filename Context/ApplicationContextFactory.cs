@@ -18,7 +18,7 @@ namespace EF_core_practice.Context
             // getting configs from Config\appsettings.json
             ConfigurationBuilder builder = new ConfigurationBuilder();
             builder.SetBasePath(Directory.GetCurrentDirectory());
-            builder.AddJsonFile("appsettings.json");
+            builder.AddJsonFile(@"Config\appsettings.json");
             IConfigurationRoot config = builder.Build();
 
             // getting connection string from configs
