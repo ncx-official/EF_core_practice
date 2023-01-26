@@ -26,6 +26,9 @@ namespace EF_core_practice.Models.ModelsConfig
                    .HasColumnName("password")
                    .IsRequired();
 
+            builder.Property(p => p.AccountRoleId)
+                   .HasColumnName("account_role_id");
+
             // Foreign keys
             builder.HasOne(p => p.AccountRole)
                    .WithMany(g => g.CorpAccounts)

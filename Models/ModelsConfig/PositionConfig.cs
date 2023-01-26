@@ -22,6 +22,9 @@ namespace EF_core_practice.Models.ModelsConfig
                    .HasColumnName("title")
                    .IsRequired();
 
+            builder.Property(p => p.DepartmentId)
+                   .HasColumnName("department_id");
+
             // Foreign keys
             builder.HasOne(e => e.Department)
                    .WithMany(p => p.Positions)

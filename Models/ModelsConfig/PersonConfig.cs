@@ -37,6 +37,12 @@ namespace EF_core_practice.Models.ModelsConfig
                    .HasColumnName("email")
                    .IsRequired().HasMaxLength(40);
 
+            builder.Property(p => p.GenderId)
+                   .HasColumnName("gender_id");
+
+            builder.Property(p => p.CityId)
+                   .HasColumnName("city_id");
+
             // Foreign keys        
             builder.HasOne(p => p.Gender)
                    .WithMany(g => g.People)

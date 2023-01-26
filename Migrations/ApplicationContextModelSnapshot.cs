@@ -26,7 +26,8 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("account_role_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
@@ -35,8 +36,7 @@ namespace EFcorepractice.Migrations
                         .HasColumnType("text")
                         .HasColumnName("value");
 
-                    b.HasKey("Id")
-                        .HasName("account_role_id");
+                    b.HasKey("Id");
 
                     b.ToTable("AccountRole", (string)null);
                 });
@@ -45,12 +45,14 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("city_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<long>("CountryId")
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("country_id");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -58,8 +60,7 @@ namespace EFcorepractice.Migrations
                         .HasColumnType("character varying(40)")
                         .HasColumnName("name");
 
-                    b.HasKey("Id")
-                        .HasName("city_id");
+                    b.HasKey("Id");
 
                     b.HasIndex("CountryId");
 
@@ -70,12 +71,14 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("corp_account_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<long>("AccountRoleId")
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("account_role_id");
 
                     b.Property<string>("Login")
                         .IsRequired()
@@ -87,8 +90,7 @@ namespace EFcorepractice.Migrations
                         .HasColumnType("text")
                         .HasColumnName("password");
 
-                    b.HasKey("Id")
-                        .HasName("corp_account_id");
+                    b.HasKey("Id");
 
                     b.HasIndex("AccountRoleId");
 
@@ -99,7 +101,8 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("country_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
@@ -109,8 +112,7 @@ namespace EFcorepractice.Migrations
                         .HasColumnType("character varying(40)")
                         .HasColumnName("name");
 
-                    b.HasKey("Id")
-                        .HasName("country_id");
+                    b.HasKey("Id");
 
                     b.ToTable("Country", (string)null);
                 });
@@ -119,7 +121,8 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("department_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
@@ -129,8 +132,7 @@ namespace EFcorepractice.Migrations
                         .HasColumnType("character varying(50)")
                         .HasColumnName("title");
 
-                    b.HasKey("Id")
-                        .HasName("department_id");
+                    b.HasKey("Id");
 
                     b.ToTable("Department", (string)null);
                 });
@@ -139,12 +141,14 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("Employee_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<long>("CorpAccountId")
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("corp_account_id");
 
                     b.Property<DateTime>("HireDate")
                         .HasColumnType("timestamp with time zone")
@@ -154,24 +158,26 @@ namespace EFcorepractice.Migrations
                         .HasColumnType("boolean");
 
                     b.Property<long>("PersonId")
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("person_id");
 
                     b.Property<long>("PositionId")
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("position_id");
 
                     b.Property<decimal>("Salary")
                         .HasColumnType("numeric")
                         .HasColumnName("salary");
 
                     b.Property<long>("WorkPlaceId")
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("work_place_id");
 
                     b.Property<double>("WorkTimePerWeek")
                         .HasColumnType("double precision")
                         .HasColumnName("workTime_perWeek");
 
-                    b.HasKey("Id")
-                        .HasName("Employee_id");
+                    b.HasKey("Id");
 
                     b.HasIndex("CorpAccountId")
                         .IsUnique();
@@ -195,7 +201,8 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("gender_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
@@ -205,8 +212,7 @@ namespace EFcorepractice.Migrations
                         .HasColumnType("character varying(20)")
                         .HasColumnName("type");
 
-                    b.HasKey("Id")
-                        .HasName("gender_id");
+                    b.HasKey("Id");
 
                     b.ToTable("Gender", (string)null);
                 });
@@ -215,7 +221,8 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("person_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
@@ -224,7 +231,8 @@ namespace EFcorepractice.Migrations
                         .HasColumnName("birthdate");
 
                     b.Property<long>("CityId")
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("city_id");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -239,7 +247,8 @@ namespace EFcorepractice.Migrations
                         .HasColumnName("first_name");
 
                     b.Property<long>("GenderId")
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("gender_id");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -253,8 +262,7 @@ namespace EFcorepractice.Migrations
                         .HasColumnType("character varying(20)")
                         .HasColumnName("phone_number");
 
-                    b.HasKey("Id")
-                        .HasName("person_id");
+                    b.HasKey("Id");
 
                     b.HasIndex("CityId");
 
@@ -267,20 +275,21 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("position_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<long>("DepartmentId")
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("department_id");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("title");
 
-                    b.HasKey("Id")
-                        .HasName("position_id");
+                    b.HasKey("Id");
 
                     b.HasIndex("DepartmentId");
 
@@ -291,7 +300,8 @@ namespace EFcorepractice.Migrations
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("bigint")
+                        .HasColumnName("work_place_id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
@@ -304,8 +314,7 @@ namespace EFcorepractice.Migrations
                         .HasColumnType("text")
                         .HasColumnName("name");
 
-                    b.HasKey("Id")
-                        .HasName("work_place_id");
+                    b.HasKey("Id");
 
                     b.ToTable("WorkPlace", (string)null);
                 });

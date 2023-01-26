@@ -21,7 +21,10 @@ namespace EF_core_practice.Models.ModelsConfig
             builder.Property(p => p.Name)
                    .HasColumnName("name")
                    .IsRequired().HasMaxLength(40);
-            
+
+            builder.Property(p => p.CountryId)
+                   .HasColumnName("country_id");
+
             builder.HasOne(c => c.Country)
                    .WithMany(co => co.Cities)
                    .HasForeignKey(c => c.CountryId);

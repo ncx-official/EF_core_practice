@@ -24,6 +24,20 @@ namespace EF_core_practice.Models.ModelsConfig
             builder.Property(p => p.Salary)
                    .HasColumnName("salary")
                    .IsRequired();
+
+            builder.Property(p => p.PositionId)
+                   .HasColumnName("position_id");
+            
+            builder.Property(p => p.WorkPlaceId)
+                   .HasColumnName("work_place_id");
+            
+            builder.Property(p => p.CorpAccountId)
+                   .HasColumnName("corp_account_id");
+
+            builder.Property(p => p.PersonId)
+                   .HasColumnName("person_id");
+
+
             builder.ToTable(p => p.HasCheckConstraint("CK_Employee_salary", "\"salary\" > 0"));
             
             builder.Property(p => p.WorkTimePerWeek)
