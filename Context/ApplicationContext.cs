@@ -1,13 +1,13 @@
 ﻿using EF_core_practice.Models;
 using EF_core_practice.Models.ModelsConfig;
 using Microsoft.EntityFrameworkCore;
-
+using System.Reflection;
 
 namespace EF_core_practice.Context
 {
     public class ApplicationContext : DbContext
     {
-        readonly StreamWriter logStream = new StreamWriter(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + String.Format(@"\Logs\logs.txt", true));
+        readonly StreamWriter logStream = new StreamWriter(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + String.Format(@"\..\..\..\Logs\logs.txt", true));
         public DbSet<AccountRole> AccountRoles { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<CorpAccount> CorpAccounts { get; set; }
