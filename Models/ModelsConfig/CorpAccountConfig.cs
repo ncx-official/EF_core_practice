@@ -15,8 +15,8 @@ namespace EF_core_practice.Models.ModelsConfig
         {
             builder.ToTable("CorpAccount");
 
-            builder.HasKey(u => u.Id)
-                   .HasName("corp_account_id");
+            builder.Property(u => u.Id)
+                   .HasColumnName("corp_account_id");
 
             builder.Property(p => p.Login)
                    .HasColumnName("login")

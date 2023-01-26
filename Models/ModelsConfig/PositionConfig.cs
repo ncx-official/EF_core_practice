@@ -15,8 +15,8 @@ namespace EF_core_practice.Models.ModelsConfig
         {
             builder.ToTable("Position");
 
-            builder.HasKey(u => u.Id)
-                   .HasName("position_id");
+            builder.Property(u => u.Id)
+                   .HasColumnName("position_id");
 
             builder.Property(p => p.Title)
                    .HasColumnName("title")
