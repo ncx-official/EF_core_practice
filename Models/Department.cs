@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace EF_core_practice.Models
 {
-    public class Position
+    public class Department
     {
         public long Id { get; set; }
         public string Title { get; set; } = null!;
-
-        // Foreign keys
-        public long DepartmentId { get; set; }
-        public Department? Department { get; set; }
-
-        //
-        public ICollection<Employee> Employees { get; set; } = null!;
+        public ICollection<Position>? Positions { get; set; } 
     }
 }
