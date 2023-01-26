@@ -1,542 +1,144 @@
-dbug: 1/26/2023 18:16:22.637 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+dbug: 1/26/2023 18:19:48.759 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
       Entity Framework Core 7.0.2 initialized 'ApplicationContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.1+bb6fc9a54b5214588485d0c178bcbc3c84f18479' with options: None
-dbug: 1/26/2023 18:16:22.656 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:48.780 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Creating DbConnection.
-dbug: 1/26/2023 18:16:22.683 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Created DbConnection. (27ms).
-dbug: 1/26/2023 18:16:22.686 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+dbug: 1/26/2023 18:19:48.810 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Created DbConnection. (29ms).
+dbug: 1/26/2023 18:19:48.813 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
       Migrating using database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:22.693 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:48.820 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Opening connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:22.800 RelationalEventId.ConnectionError[20004] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      An error occurred using the connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:22.801 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opening connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:22.852 RelationalEventId.ConnectionError[20004] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      An error occurred using the connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:22.964 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Creating DbConnection.
-dbug: 1/26/2023 18:16:22.964 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Created DbConnection. (0ms).
-dbug: 1/26/2023 18:16:22.964 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opening connection to database 'postgres' on server ''.
-dbug: 1/26/2023 18:16:23.074 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:23.079 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:23.084 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (4ms).
-dbug: 1/26/2023 18:16:23.085 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (7ms).
-dbug: 1/26/2023 18:16:23.089 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE DATABASE "StaffDB";
-info: 1/26/2023 18:16:23.445 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (356ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE DATABASE "StaffDB";
-dbug: 1/26/2023 18:16:23.447 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:23.453 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closed connection to database 'postgres' on server '' (3ms).
-dbug: 1/26/2023 18:16:23.454 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Disposing connection to database 'postgres' on server ''.
-dbug: 1/26/2023 18:16:23.455 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Disposed connection to database 'postgres' on server '' (0ms).
-dbug: 1/26/2023 18:16:23.455 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opening connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:23.677 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:48.987 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Opened connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:23.677 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:48.988 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Closing connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:23.677 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closed connection to database 'StaffDB' on server '' (0ms).
-dbug: 1/26/2023 18:16:23.753 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:23.753 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:23.754 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:23.754 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opening connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:23.965 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opened connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:23.965 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "__EFMigrationsHistory" (
-          "MigrationId" character varying(150) NOT NULL,
-          "ProductVersion" character varying(32) NOT NULL,
-          CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
-      );
-info: 1/26/2023 18:16:23.976 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "__EFMigrationsHistory" (
-          "MigrationId" character varying(150) NOT NULL,
-          "ProductVersion" character varying(32) NOT NULL,
-          CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
-      );
-dbug: 1/26/2023 18:16:23.976 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closing connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:23.978 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closed connection to database 'StaffDB' on server '' (1ms).
-dbug: 1/26/2023 18:16:23.979 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opening connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:24.039 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Opened connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:24.040 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closing connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:24.040 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Closed connection to database 'StaffDB' on server '' (0ms).
-dbug: 1/26/2023 18:16:24.041 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:48.995 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StaffDB' on server '' (4ms).
+dbug: 1/26/2023 18:19:49.002 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
       Creating DbCommand for 'ExecuteScalar'.
-dbug: 1/26/2023 18:16:24.041 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.007 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (4ms).
+dbug: 1/26/2023 18:19:49.008 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Initialized DbCommand for 'ExecuteScalar' (8ms).
+dbug: 1/26/2023 18:19:49.008 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StaffDB' on server ''.
+dbug: 1/26/2023 18:19:49.090 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StaffDB' on server 'tcp://localhost:5432'.
+dbug: 1/26/2023 18:19:49.094 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+info: 1/26/2023 18:19:49.163 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (70ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+dbug: 1/26/2023 18:19:49.164 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StaffDB' on server 'tcp://localhost:5432'.
+dbug: 1/26/2023 18:19:49.165 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StaffDB' on server '' (1ms).
+dbug: 1/26/2023 18:19:49.167 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'StaffDB' on server ''.
+dbug: 1/26/2023 18:19:49.222 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'StaffDB' on server 'tcp://localhost:5432'.
+dbug: 1/26/2023 18:19:49.222 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'StaffDB' on server 'tcp://localhost:5432'.
+dbug: 1/26/2023 18:19:49.222 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'StaffDB' on server '' (0ms).
+dbug: 1/26/2023 18:19:49.222 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 1/26/2023 18:19:49.222 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
       Created DbCommand for 'ExecuteScalar' (0ms).
-dbug: 1/26/2023 18:16:24.041 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.222 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
       Initialized DbCommand for 'ExecuteScalar' (0ms).
-dbug: 1/26/2023 18:16:24.041 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.222 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Opening connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:24.041 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.222 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Opened connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:24.042 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.222 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-info: 1/26/2023 18:16:24.057 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+info: 1/26/2023 18:19:49.223 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-dbug: 1/26/2023 18:16:24.057 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.223 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Closing connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:24.057 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.223 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Closed connection to database 'StaffDB' on server '' (0ms).
-dbug: 1/26/2023 18:16:24.059 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.235 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
       Creating DbCommand for 'ExecuteReader'.
-dbug: 1/26/2023 18:16:24.059 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.235 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
       Created DbCommand for 'ExecuteReader' (0ms).
-dbug: 1/26/2023 18:16:24.059 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.235 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
       Initialized DbCommand for 'ExecuteReader' (0ms).
-dbug: 1/26/2023 18:16:24.059 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.235 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Opening connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:24.059 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.235 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Opened connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:24.059 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.236 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT "MigrationId", "ProductVersion"
       FROM "__EFMigrationsHistory"
       ORDER BY "MigrationId";
-info: 1/26/2023 18:16:24.061 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+info: 1/26/2023 18:19:49.238 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       SELECT "MigrationId", "ProductVersion"
       FROM "__EFMigrationsHistory"
       ORDER BY "MigrationId";
-dbug: 1/26/2023 18:16:24.063 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.243 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command) 
       Closing data reader to 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:24.066 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
-      A data reader for 'StaffDB' on server 'tcp://localhost:5432' is being disposed after spending 4ms reading results.
-dbug: 1/26/2023 18:16:24.066 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.247 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader for 'StaffDB' on server 'tcp://localhost:5432' is being disposed after spending 7ms reading results.
+dbug: 1/26/2023 18:19:49.247 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Closing connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:24.066 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.247 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Closed connection to database 'StaffDB' on server '' (0ms).
-info: 1/26/2023 18:16:24.077 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
-      Applying migration '20230126161613_InitialMigration'.
-dbug: 1/26/2023 18:16:24.150 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+info: 1/26/2023 18:19:49.257 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20230126161940_UpdateModelKeyName'.
+dbug: 1/26/2023 18:19:49.325 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Opening connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:24.150 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.325 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Opened connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:24.151 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+dbug: 1/26/2023 18:19:49.327 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
       Beginning transaction with isolation level 'Unspecified'.
-dbug: 1/26/2023 18:16:24.155 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+dbug: 1/26/2023 18:19:49.332 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
       Began transaction with isolation level 'ReadCommitted'.
-dbug: 1/26/2023 18:16:24.156 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.333 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
       Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.156 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.333 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
       Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.156 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.333 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
       Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.156 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.334 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "AccountRole" (
-          account_role_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          value text NOT NULL,
-          CONSTRAINT "PK_AccountRole" PRIMARY KEY (account_role_id)
-      );
-info: 1/26/2023 18:16:24.171 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "AccountRole" (
-          account_role_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          value text NOT NULL,
-          CONSTRAINT "PK_AccountRole" PRIMARY KEY (account_role_id)
-      );
-dbug: 1/26/2023 18:16:24.171 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.171 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.172 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.172 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Country" (
-          country_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          name character varying(40) NOT NULL,
-          CONSTRAINT "PK_Country" PRIMARY KEY (country_id)
-      );
-info: 1/26/2023 18:16:24.178 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Country" (
-          country_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          name character varying(40) NOT NULL,
-          CONSTRAINT "PK_Country" PRIMARY KEY (country_id)
-      );
-dbug: 1/26/2023 18:16:24.178 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.178 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.178 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.178 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Department" (
-          department_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          title character varying(50) NOT NULL,
-          CONSTRAINT "PK_Department" PRIMARY KEY (department_id)
-      );
-info: 1/26/2023 18:16:24.182 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      ALTER TABLE "Employee" RENAME COLUMN "Employee_id" TO employee_id;
+info: 1/26/2023 18:19:49.337 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Department" (
-          department_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          title character varying(50) NOT NULL,
-          CONSTRAINT "PK_Department" PRIMARY KEY (department_id)
-      );
-dbug: 1/26/2023 18:16:24.183 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      ALTER TABLE "Employee" RENAME COLUMN "Employee_id" TO employee_id;
+dbug: 1/26/2023 18:19:49.337 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
       Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.183 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.337 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
       Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.183 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.337 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
       Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.183 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Gender" (
-          gender_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          type character varying(20) NOT NULL,
-          CONSTRAINT "PK_Gender" PRIMARY KEY (gender_id)
-      );
-info: 1/26/2023 18:16:24.188 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Gender" (
-          gender_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          type character varying(20) NOT NULL,
-          CONSTRAINT "PK_Gender" PRIMARY KEY (gender_id)
-      );
-dbug: 1/26/2023 18:16:24.188 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.188 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.188 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.188 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "WorkPlace" (
-          work_place_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          "isSelfMade_hardware" boolean NOT NULL,
-          name text NOT NULL,
-          CONSTRAINT "PK_WorkPlace" PRIMARY KEY (work_place_id)
-      );
-info: 1/26/2023 18:16:24.198 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "WorkPlace" (
-          work_place_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          "isSelfMade_hardware" boolean NOT NULL,
-          name text NOT NULL,
-          CONSTRAINT "PK_WorkPlace" PRIMARY KEY (work_place_id)
-      );
-dbug: 1/26/2023 18:16:24.198 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.198 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.198 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.198 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "CorpAccount" (
-          corp_account_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          login text NOT NULL,
-          password text NOT NULL,
-          account_role_id bigint NOT NULL,
-          CONSTRAINT "PK_CorpAccount" PRIMARY KEY (corp_account_id),
-          CONSTRAINT "FK_CorpAccount_AccountRole_account_role_id" FOREIGN KEY (account_role_id) REFERENCES "AccountRole" (account_role_id) ON DELETE CASCADE
-      );
-info: 1/26/2023 18:16:24.208 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "CorpAccount" (
-          corp_account_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          login text NOT NULL,
-          password text NOT NULL,
-          account_role_id bigint NOT NULL,
-          CONSTRAINT "PK_CorpAccount" PRIMARY KEY (corp_account_id),
-          CONSTRAINT "FK_CorpAccount_AccountRole_account_role_id" FOREIGN KEY (account_role_id) REFERENCES "AccountRole" (account_role_id) ON DELETE CASCADE
-      );
-dbug: 1/26/2023 18:16:24.208 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.208 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.208 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.208 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "City" (
-          city_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          name character varying(40) NOT NULL,
-          country_id bigint NOT NULL,
-          CONSTRAINT "PK_City" PRIMARY KEY (city_id),
-          CONSTRAINT "FK_City_Country_country_id" FOREIGN KEY (country_id) REFERENCES "Country" (country_id) ON DELETE CASCADE
-      );
-info: 1/26/2023 18:16:24.213 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "City" (
-          city_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          name character varying(40) NOT NULL,
-          country_id bigint NOT NULL,
-          CONSTRAINT "PK_City" PRIMARY KEY (city_id),
-          CONSTRAINT "FK_City_Country_country_id" FOREIGN KEY (country_id) REFERENCES "Country" (country_id) ON DELETE CASCADE
-      );
-dbug: 1/26/2023 18:16:24.213 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.213 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.213 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.213 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Position" (
-          position_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          title text NOT NULL,
-          department_id bigint NOT NULL,
-          CONSTRAINT "PK_Position" PRIMARY KEY (position_id),
-          CONSTRAINT "FK_Position_Department_department_id" FOREIGN KEY (department_id) REFERENCES "Department" (department_id) ON DELETE CASCADE
-      );
-info: 1/26/2023 18:16:24.223 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Position" (
-          position_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          title text NOT NULL,
-          department_id bigint NOT NULL,
-          CONSTRAINT "PK_Position" PRIMARY KEY (position_id),
-          CONSTRAINT "FK_Position_Department_department_id" FOREIGN KEY (department_id) REFERENCES "Department" (department_id) ON DELETE CASCADE
-      );
-dbug: 1/26/2023 18:16:24.223 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.223 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.223 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.223 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Person" (
-          person_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          first_name character varying(40) NOT NULL,
-          last_name character varying(40) NOT NULL,
-          birthdate timestamp with time zone NOT NULL,
-          phone_number character varying(20) NOT NULL,
-          email character varying(40) NOT NULL,
-          gender_id bigint NOT NULL,
-          city_id bigint NOT NULL,
-          CONSTRAINT "PK_Person" PRIMARY KEY (person_id),
-          CONSTRAINT "FK_Person_City_city_id" FOREIGN KEY (city_id) REFERENCES "City" (city_id) ON DELETE CASCADE,
-          CONSTRAINT "FK_Person_Gender_gender_id" FOREIGN KEY (gender_id) REFERENCES "Gender" (gender_id) ON DELETE CASCADE
-      );
-info: 1/26/2023 18:16:24.229 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Person" (
-          person_id bigint GENERATED BY DEFAULT AS IDENTITY,
-          first_name character varying(40) NOT NULL,
-          last_name character varying(40) NOT NULL,
-          birthdate timestamp with time zone NOT NULL,
-          phone_number character varying(20) NOT NULL,
-          email character varying(40) NOT NULL,
-          gender_id bigint NOT NULL,
-          city_id bigint NOT NULL,
-          CONSTRAINT "PK_Person" PRIMARY KEY (person_id),
-          CONSTRAINT "FK_Person_City_city_id" FOREIGN KEY (city_id) REFERENCES "City" (city_id) ON DELETE CASCADE,
-          CONSTRAINT "FK_Person_Gender_gender_id" FOREIGN KEY (gender_id) REFERENCES "Gender" (gender_id) ON DELETE CASCADE
-      );
-dbug: 1/26/2023 18:16:24.229 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.229 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.229 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.229 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Employee" (
-          "Employee_id" bigint GENERATED BY DEFAULT AS IDENTITY,
-          hire_date timestamp with time zone NOT NULL,
-          salary numeric NOT NULL,
-          "workTime_perWeek" double precision NOT NULL,
-          "IsWorkingNow" boolean NOT NULL,
-          position_id bigint NOT NULL,
-          work_place_id bigint NOT NULL,
-          corp_account_id bigint NOT NULL,
-          person_id bigint NOT NULL,
-          CONSTRAINT "PK_Employee" PRIMARY KEY ("Employee_id"),
-          CONSTRAINT "CK_Employee_salary" CHECK ("salary" > 0),
-          CONSTRAINT "CK_Employee_workTime_perWeek" CHECK ("workTime_perWeek" > 0),
-          CONSTRAINT "FK_Employee_CorpAccount_corp_account_id" FOREIGN KEY (corp_account_id) REFERENCES "CorpAccount" (corp_account_id) ON DELETE CASCADE,
-          CONSTRAINT "FK_Employee_Person_person_id" FOREIGN KEY (person_id) REFERENCES "Person" (person_id) ON DELETE CASCADE,
-          CONSTRAINT "FK_Employee_Position_position_id" FOREIGN KEY (position_id) REFERENCES "Position" (position_id) ON DELETE CASCADE,
-          CONSTRAINT "FK_Employee_WorkPlace_work_place_id" FOREIGN KEY (work_place_id) REFERENCES "WorkPlace" (work_place_id) ON DELETE CASCADE
-      );
-info: 1/26/2023 18:16:24.239 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "Employee" (
-          "Employee_id" bigint GENERATED BY DEFAULT AS IDENTITY,
-          hire_date timestamp with time zone NOT NULL,
-          salary numeric NOT NULL,
-          "workTime_perWeek" double precision NOT NULL,
-          "IsWorkingNow" boolean NOT NULL,
-          position_id bigint NOT NULL,
-          work_place_id bigint NOT NULL,
-          corp_account_id bigint NOT NULL,
-          person_id bigint NOT NULL,
-          CONSTRAINT "PK_Employee" PRIMARY KEY ("Employee_id"),
-          CONSTRAINT "CK_Employee_salary" CHECK ("salary" > 0),
-          CONSTRAINT "CK_Employee_workTime_perWeek" CHECK ("workTime_perWeek" > 0),
-          CONSTRAINT "FK_Employee_CorpAccount_corp_account_id" FOREIGN KEY (corp_account_id) REFERENCES "CorpAccount" (corp_account_id) ON DELETE CASCADE,
-          CONSTRAINT "FK_Employee_Person_person_id" FOREIGN KEY (person_id) REFERENCES "Person" (person_id) ON DELETE CASCADE,
-          CONSTRAINT "FK_Employee_Position_position_id" FOREIGN KEY (position_id) REFERENCES "Position" (position_id) ON DELETE CASCADE,
-          CONSTRAINT "FK_Employee_WorkPlace_work_place_id" FOREIGN KEY (work_place_id) REFERENCES "WorkPlace" (work_place_id) ON DELETE CASCADE
-      );
-dbug: 1/26/2023 18:16:24.239 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.239 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.239 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.239 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_City_country_id" ON "City" (country_id);
-info: 1/26/2023 18:16:24.242 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_City_country_id" ON "City" (country_id);
-dbug: 1/26/2023 18:16:24.242 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.242 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.242 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.242 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_CorpAccount_account_role_id" ON "CorpAccount" (account_role_id);
-info: 1/26/2023 18:16:24.245 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_CorpAccount_account_role_id" ON "CorpAccount" (account_role_id);
-dbug: 1/26/2023 18:16:24.245 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.245 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.245 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.245 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE UNIQUE INDEX "IX_Employee_corp_account_id" ON "Employee" (corp_account_id);
-info: 1/26/2023 18:16:24.249 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE UNIQUE INDEX "IX_Employee_corp_account_id" ON "Employee" (corp_account_id);
-dbug: 1/26/2023 18:16:24.249 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.249 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.249 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.249 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE UNIQUE INDEX "IX_Employee_person_id" ON "Employee" (person_id);
-info: 1/26/2023 18:16:24.253 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE UNIQUE INDEX "IX_Employee_person_id" ON "Employee" (person_id);
-dbug: 1/26/2023 18:16:24.253 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.253 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.253 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.253 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Employee_position_id" ON "Employee" (position_id);
-info: 1/26/2023 18:16:24.255 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Employee_position_id" ON "Employee" (position_id);
-dbug: 1/26/2023 18:16:24.255 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.255 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.255 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.255 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Employee_work_place_id" ON "Employee" (work_place_id);
-info: 1/26/2023 18:16:24.259 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Employee_work_place_id" ON "Employee" (work_place_id);
-dbug: 1/26/2023 18:16:24.259 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.259 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.259 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.259 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Person_city_id" ON "Person" (city_id);
-info: 1/26/2023 18:16:24.261 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Person_city_id" ON "Person" (city_id);
-dbug: 1/26/2023 18:16:24.261 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.262 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.262 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.262 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Person_gender_id" ON "Person" (gender_id);
-info: 1/26/2023 18:16:24.265 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Person_gender_id" ON "Person" (gender_id);
-dbug: 1/26/2023 18:16:24.265 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.265 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.265 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.265 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Position_department_id" ON "Position" (department_id);
-info: 1/26/2023 18:16:24.268 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE INDEX "IX_Position_department_id" ON "Position" (department_id);
-dbug: 1/26/2023 18:16:24.268 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Creating DbCommand for 'ExecuteNonQuery'.
-dbug: 1/26/2023 18:16:24.268 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Created DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.268 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command) 
-      Initialized DbCommand for 'ExecuteNonQuery' (0ms).
-dbug: 1/26/2023 18:16:24.268 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+dbug: 1/26/2023 18:19:49.338 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
       INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
-      VALUES ('20230126161613_InitialMigration', '7.0.2');
-info: 1/26/2023 18:16:24.269 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      VALUES ('20230126161940_UpdateModelKeyName', '7.0.2');
+info: 1/26/2023 18:19:49.338 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
-      VALUES ('20230126161613_InitialMigration', '7.0.2');
-dbug: 1/26/2023 18:16:24.270 RelationalEventId.TransactionCommitting[20210] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      VALUES ('20230126161940_UpdateModelKeyName', '7.0.2');
+dbug: 1/26/2023 18:19:49.339 RelationalEventId.TransactionCommitting[20210] (Microsoft.EntityFrameworkCore.Database.Transaction) 
       Committing transaction.
-dbug: 1/26/2023 18:16:24.273 RelationalEventId.TransactionCommitted[20202] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+dbug: 1/26/2023 18:19:49.343 RelationalEventId.TransactionCommitted[20202] (Microsoft.EntityFrameworkCore.Database.Transaction) 
       Committed transaction.
-dbug: 1/26/2023 18:16:24.274 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+dbug: 1/26/2023 18:19:49.345 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
       Disposing transaction.
-dbug: 1/26/2023 18:16:24.274 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.345 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Closing connection to database 'StaffDB' on server 'tcp://localhost:5432'.
-dbug: 1/26/2023 18:16:24.275 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.345 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Closed connection to database 'StaffDB' on server '' (0ms).
-dbug: 1/26/2023 18:16:24.276 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+dbug: 1/26/2023 18:19:49.347 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
       'ApplicationContext' disposed.
-dbug: 1/26/2023 18:16:24.276 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
+dbug: 1/26/2023 18:19:49.349 RelationalEventId.ConnectionDisposing[20007] (Microsoft.EntityFrameworkCore.Database.Connection) 
       Disposing connection to database 'StaffDB' on server ''.
-dbug: 1/26/2023 18:16:24.276 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
-      Disposed connection to database 'StaffDB' on server '' (0ms).
+dbug: 1/26/2023 18:19:49.350 RelationalEventId.ConnectionDisposed[20008] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Disposed connection to database 'StaffDB' on server '' (1ms).

@@ -15,7 +15,7 @@ namespace EF_core_practice.Models.ModelsConfig
             builder.ToTable("Employee");
 
             builder.Property(u => u.Id)
-                   .HasColumnName("Employee_id");
+                   .HasColumnName("employee_id");
 
             builder.Property(p => p.HireDate)
                    .HasColumnName("hire_date")
